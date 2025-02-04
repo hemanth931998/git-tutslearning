@@ -1,0 +1,128 @@
+
+git init :- :- Will Initialized empty Git repository in Folder
+
+Initialized empty Git repository in F:/Sonatalearning/GIT&GITHUB/Git-tuts/.git/
+====================================================================================================
+git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+
+======================================================================================================
+
+Working directory Means the files that are present in Untracked files list.
+
+F:\Sonatalearning\GIT&GITHUB\Git-tuts>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        example.txt.txt
+        git.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Here Both example.txt and git.txt are present in working directory.
+
+==========================================================================================================
+Goal In Git is to send the files to remote repository
+
+
+Working Directory ==> Staging Area ==> Local repository ==>Remote repository.
+
+uses of staging Area is we can send selected one file at a time from working directory to staging Area
+
+But we cannot send single file from staging area to local repository or from local repository to remote repository.
+
+Git commit is used to send all files from staging area to Local Repository.
+
+Git Push is used to send all files from Local Repository to Remote Repository.
+
+Git Add is used to send single file from working directory to staging area.
+
+============================================================================
+
+After adding example.txt using git add example.txt
+
+Git status will show below 
+
+F:\Sonatalearning\GIT&GITHUB\Git-tuts>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   example.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git.txt
+
+=======================================================================================================
+F:\Sonatalearning\GIT&GITHUB\Git-tuts>git commit -m "Commiting example.txt"
+[master (root-commit) ebbd09d] Commiting example.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 example.txt
+
+==================================================================================================
+
+F:\Sonatalearning\GIT&GITHUB\Git-tuts>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+===> only working directory and staging directory files are shown in git status...... 
+
+
+=====================================================================================================
+
+
+git remote add origin https://github.com/hemanth931998/git-tutslearning.git
+
+
+This command will add the remote directory.
+
+====================================================================================
+
+git branch
+
+Will give you the details of the branch we are in 
+
+=====================================================================================
+
+git push -u origin master
+
+Will push the code to remote repository.
+
+====================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
